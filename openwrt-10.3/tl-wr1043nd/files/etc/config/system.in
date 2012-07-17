@@ -1,0 +1,15 @@
+
+config 'system'
+	option 'hostname' '@HOST@'
+	option 'timezone' 'UTC'
+
+config 'rdate'
+	option 'interface' 'lan'
+
+config 'led' 'wlan_led'
+	option 'name' 'WLAN'
+	option 'sysfs' 'tl-wr1043nd:green:wlan'
+	option 'trigger' 'netdev'
+	option 'device' 'wlan0'
+	option 'mode' 'link tx rx'
+
